@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Query-Advanced
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
 Release:	7
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2b1e5a7dd9bed41645e67a3057614a69
@@ -29,10 +34,13 @@ Text::Query::Advanced - wyszukuje tekst stosuj±c operatory logiczne.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
