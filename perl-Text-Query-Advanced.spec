@@ -5,7 +5,7 @@ Summary:	Text::Query::Advanced perl module
 Summary(pl):	Modu³ perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
