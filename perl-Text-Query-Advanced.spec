@@ -24,7 +24,7 @@ Text::Query::Advanced - wyszukuje tekst stosuj±c operatory logiczne.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
