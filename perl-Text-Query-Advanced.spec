@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Query-Advanced
-Summary:	Text-Query-Advanced perl module
-Summary(pl):	Modu³ perla Text-Query-Advanced
+Summary:	Text::Query::Advanced perl module
+Summary(pl):	Modu³ perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-Query-Advanced - matches text against Boolean expression.
+Text::Query::Advanced - matches text against Boolean expression.
 
 %description -l pl
-Text-Query-Advanced - wyszukuje tekst stosuj±c operatory logiczne.
+Text::Query::Advanced - wyszukuje tekst stosuj±c operatory logiczne.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
