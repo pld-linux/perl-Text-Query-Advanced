@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	Query-Advanced
+%define		pdir	Text
+%define		pnam	Query-Advanced
 Summary:	Text::Query::Advanced perl module
 Summary(pl):	Modu³ perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
