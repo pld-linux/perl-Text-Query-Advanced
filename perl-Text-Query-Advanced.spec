@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	Query-Advanced
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-Query-Advanced perl module
 Summary(pl):	Modu³ perla Text-Query-Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Text-Query-Advanced - matches text against Boolean expression.
 Text-Query-Advanced - wyszukuje tekst stosuj±c operatory logiczne.
 
 %prep
-%setup -q -n Text-Query-Advanced-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
