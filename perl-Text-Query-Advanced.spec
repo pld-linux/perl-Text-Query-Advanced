@@ -25,7 +25,7 @@ Text-Query-Advanced - wyszukuje tekst stosuj±c operatory logiczne.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
