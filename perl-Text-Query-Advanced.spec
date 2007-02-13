@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Query-Advanced
 Summary:	Text::Query::Advanced perl module
-Summary(pl.UTF-8):   Moduł perla Text::Query::Advanced
+Summary(pl.UTF-8):	Moduł perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
 Release:	8
