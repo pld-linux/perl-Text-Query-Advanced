@@ -9,7 +9,7 @@ Summary:	Text::Query::Advanced perl module
 Summary(pl.UTF-8):	Moduł perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
 Version:	0.05
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
