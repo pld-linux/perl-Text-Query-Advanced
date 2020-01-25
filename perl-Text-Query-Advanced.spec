@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	Query-Advanced
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::Query::Advanced perl module
 Summary(pl.UTF-8):	Moduł perla Text::Query::Advanced
 Name:		perl-Text-Query-Advanced
